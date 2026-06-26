@@ -82,7 +82,7 @@ with st.sidebar:
 
     st.divider()
     st.subheader("Patient")
-    stay_id    = st.text_input("Stay ID", value="ICU-38066951", help="ICU patient identifier")
+    stay_id    = st.text_input("Stay ID", value="38066951", help="ICU patient identifier")
     n_hours    = st.slider("Hours of vitals to submit", 2, 24, 8)
     use_seq    = st.toggle("Full temporal analysis (BiLSTM)", value=True,
                            help="Uses all submitted hours. Slower but more accurate.")
